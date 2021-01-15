@@ -4,7 +4,7 @@ import hello.core.discount.DiscountPolicy
 import hello.core.member.MemberRepository
 
 class OrderServiceImpl(
-        private val memberRepository: MemberRepository,
+        val memberRepository: MemberRepository,
         private val discountPolicy: DiscountPolicy
 ) : OrderService {
     override fun createOrder(memberId: Long, itemName: String, itemPrice: Int): Order {
