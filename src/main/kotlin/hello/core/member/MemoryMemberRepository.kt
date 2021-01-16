@@ -1,7 +1,8 @@
 package hello.core.member
 
-import java.util.concurrent.ConcurrentHashMap
+import org.springframework.stereotype.Component
 
+@Component
 class MemoryMemberRepository : MemberRepository {
 
     companion object{
