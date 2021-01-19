@@ -1,6 +1,6 @@
 package hello.core.order
 
-class Order(
+data class Order(
         val memberId: Long,
         val itemName: String,
         val itemPrice: Int,
